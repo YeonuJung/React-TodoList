@@ -6,6 +6,7 @@ const TodoInput = styled.input`
     border: none;
     flex-grow: 1;
     font-size: 20px;
+    font-weight: 550;
     margin-right: 5px;
     outline: none;
     `
@@ -14,7 +15,7 @@ const TodoInput = styled.input`
         align-items: center;
         height: 50px;
         padding-right: 5px;
-        padding-left: 5px;
+        padding-left: 10px;
     `
 const TodoInsert = ({insertValueHandler, addTodo, insertValue}) => {
     

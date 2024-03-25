@@ -7,6 +7,7 @@ const TodoListItem = styled.div`
     height: 50px;
     padding: 0 5px;
     font-weight: 600;
+    font-size: 20px;
 
     display: flex;
     align-items: center;
@@ -21,6 +22,7 @@ const TodoListItem = styled.div`
     }
     span{
         flex-grow: 1;
+        color: black;
     }
     
 ` 
