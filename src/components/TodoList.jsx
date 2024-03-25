@@ -35,7 +35,7 @@ const {Todos, deleteTodo} = props
     return (
         <div>
             {Todos.map((todo, index) => {
-                return index % 2 !== 0 ? <TodoListItem><input type='checkbox'/><span>{todo}</span><TiDelete onClick ={() => {return deleteTodo(index)}}/></TodoListItem> : <TodoListItem2><input type='checkbox'/><span>{todo}</span><TiDelete onClick={() => {return deleteTodo(index)}}/></TodoListItem2> 
+                return index % 2 !== 0 ? <TodoListItem><input type='checkbox'/><span>{todo}</span><TiDelete onClick ={() => {deleteTodo(index)}}/></TodoListItem> : <TodoListItem2><input type='checkbox'/><span>{todo}</span><TiDelete onClick={() => {deleteTodo(index)}}/></TodoListItem2> 
             })}
         </div>
     );

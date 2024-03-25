@@ -19,12 +19,13 @@ const TodoInput = styled.input`
     `
 const TodoInsert = ({insertValueHandler, addTodo, insertValue}) => {
     
-    const inputValue = (e) => {
-       return insertValueHandler(e.target.value)
+    const inputValue = (e) => {   
+       return insertValueHandler(e.target.value) 
+
     }
     return (
         <Container>
-            <TodoInput type = 'text' placeholder='오늘 할 일을 적어주세요.' onChange={inputValue} value = {insertValue}></TodoInput><FaPlusCircle onClick={addTodo} />
+            <TodoInput type = 'text' placeholder='오늘 할 일을 적어주세요.' onChange={inputValue}></TodoInput><FaPlusCircle onClick={addTodo} />
         </Container>
     );
 };
